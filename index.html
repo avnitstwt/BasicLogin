@@ -4,36 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="./src/output.css">
-    <link 12 href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
-<body class="h-full w-full ">
+<body class="h-full w-full">
     <div class="page h-full w-full bg-pink-500 flex justify-center items-center">
-        <div class="box h-[65vh] w-[20vw] rounded-2xl bg-white flex flex-col items-center">
-            <div class="Login text-center text-3xl p-6">
+        <div
+            class="box min-h-[60vh] w-[90%] max-w-[350px] rounded-2xl bg-white flex flex-col items-center py-8 shadow-2xl">
+
+            <div class="Login text-center text-3xl font-bold mb-8">
                 Login Form
             </div>
-            <div class="logos flex min-w-[70%]  gap-1 max-w-[70%] justify-center overflow-hidden ">
-                <div class="fb p-2  rounded-sm text-white bg-[#4341a6]">
-                    <i class="ri-facebook-fill"></i>Facebook
+
+            <div class="logos flex w-[80%] justify-between gap-3 mb-6">
+                <div
+                    class="fb flex-1 py-2 rounded-md text-white bg-[#4341a6] flex items-center justify-center text-xs cursor-pointer hover:opacity-90 transition">
+                    <i class="ri-facebook-fill mr-1"></i> Facebook
                 </div>
-                <div class="tw text-white p-2  rounded-sm bg-[#7070f8]">
-                    <i class="ri-twitter-fill"></i> Twitter
+                <div
+                    class="tw flex-1 py-2 rounded-md text-white bg-[#7070f8] flex items-center justify-center text-xs cursor-pointer hover:opacity-90 transition">
+                    <i class="ri-twitter-fill mr-1"></i> Twitter
                 </div>
             </div>
-            <div class="inp flex flex-col mt-5 items-center">
 
-                <div class="sing flex border bg-red-400 min-w-[70%] max-w-[70%] w-[70%] px-2">
+            <div class="inp flex flex-col w-full items-center gap-4">
 
-                    <i class="ri-user-fill"></i>
-                    <input type="text" placeholder="Email or Phone">
+                <div
+                    class="sing flex items-center border border-gray-300 rounded-md w-[80%] px-3 py-2 focus-within:border-pink-500 transition">
+                    <i class="ri-user-fill text-gray-400 mr-2"></i>
+                    <input type="text" placeholder="Email or Phone" class="w-full outline-none text-sm bg-transparent">
                 </div>
-                <div class="secon">
-                    <i class="ri-lock-line"></i>
-                    <input type="text" placeholder="Password">
+
+                <div
+                    class="secon flex items-center border border-gray-300 rounded-md w-[80%] px-3 py-2 focus-within:border-pink-500 transition">
+                    <i class="ri-lock-line text-gray-400 mr-2"></i>
+                    <input type="password" placeholder="Password" class="w-full outline-none text-sm bg-transparent">
                 </div>
+
+                <div class="w-[80%] flex justify-between ">
+                    <div class="rem">
+
+                        <input type="checkbox" name="" id="rem">
+                        <label for="rem">Remember me</label>
+                    </div>
+                    <a href="#" class="text-xs text-pink-500 hover:underline">Forgot password?</a>
+                </div>
+
+                <button
+                    class="w-[80%] bg-pink-500 text-white py-2 rounded-md font-semibold mt-2 hover:bg-pink-600 transition">
+                    LOGIN
+                </button>
+
+                <div class="mt-4 text-gray-600 text-sm">
+                    Not a member? <a href="#" class="text-pink-500 font-bold hover:underline">Signup now</a>
+                </div>
+
             </div>
         </div>
     </div>
