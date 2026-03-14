@@ -11,20 +11,30 @@
 
 <body class="h-full w-full ">
     <div class="page h-full w-full bg-pink-500 flex justify-center items-center">
-        <div class="box h-[75vh] w-[25vw] rounded-b-md bg-white ">
+        <div class="box h-[65vh] w-[20vw] rounded-2xl bg-white flex flex-col items-center">
             <div class="Login text-center text-3xl p-6">
                 Login Form
             </div>
-            <div class="logos  flex justify-around">
-                <div class="fb p-2 px-4 rounded-sm text-white bg-[#4341a6]">
+            <div class="logos flex min-w-[70%]  gap-1 max-w-[70%] justify-center overflow-hidden ">
+                <div class="fb p-2  rounded-sm text-white bg-[#4341a6]">
                     <i class="ri-facebook-fill"></i>Facebook
                 </div>
-                <div class="tw text-white p-2 px-4 rounded-sm bg-[#7070f8]">
+                <div class="tw text-white p-2  rounded-sm bg-[#7070f8]">
                     <i class="ri-twitter-fill"></i> Twitter
                 </div>
             </div>
-            <input type="text">
-            <input type="text">
+            <div class="inp flex flex-col mt-5 items-center">
+
+                <div class="sing flex border bg-red-400 min-w-[70%] max-w-[70%] w-[70%] px-2">
+
+                    <i class="ri-user-fill"></i>
+                    <input type="text" placeholder="Email or Phone">
+                </div>
+                <div class="secon">
+                    <i class="ri-lock-line"></i>
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
         </div>
     </div>
 </body>
