@@ -20,11 +20,11 @@
 
             <div class="logos flex w-[80%] justify-between gap-3 mb-6">
                 <div
-                    class="fb flex-1 py-2 rounded-md text-white bg-[#4341a6] flex items-center justify-center text-xs cursor-pointer hover:opacity-90 transition">
+                    class="fb flex-1 py-2 rounded-md text-white bg-[#4341a6] flex items-center justify-center text-base cursor-pointer hover:opacity-90 transition">
                     <i class="ri-facebook-fill mr-1"></i> Facebook
                 </div>
                 <div
-                    class="tw flex-1 py-2 rounded-md text-white bg-[#7070f8] flex items-center justify-center text-xs cursor-pointer hover:opacity-90 transition">
+                    class="tw flex-1 py-2 rounded-md text-white bg-[#7070f8] flex items-center justify-center text-base cursor-pointer hover:opacity-90 transition">
                     <i class="ri-twitter-fill mr-1"></i> Twitter
                 </div>
             </div>
@@ -33,21 +33,24 @@
 
                 <div
                     class="sing flex items-center border border-gray-300 rounded-md w-[80%] px-3 py-2 focus-within:border-pink-500 transition">
-                    <i class="ri-user-fill text-gray-400 mr-2"></i>
-                    <input type="text" placeholder="Email or Phone" class="w-full outline-none text-sm bg-transparent">
+                    <label for="em"> <i class="ri-user-fill text-gray-400 mr-2"></i> </label>
+                    <input id="em" type="text" placeholder="Email or Phone"
+                        class="w-full outline-none text-sm bg-transparent">
                 </div>
 
                 <div
                     class="secon flex items-center border border-gray-300 rounded-md w-[80%] px-3 py-2 focus-within:border-pink-500 transition">
-                    <i class="ri-lock-line text-gray-400 mr-2"></i>
-                    <input type="password" placeholder="Password" class="w-full outline-none text-sm bg-transparent">
+                    <label for="ps"><i class="ri-lock-line text-gray-400 mr-2"></i></label>
+                    <input id="ps" type="password" placeholder="Password"
+                        class="w-full outline-none text-sm bg-transparent">
                 </div>
 
-                <div class="w-[80%] flex justify-between ">
-                    <div class="rem">
-
-                        <input type="checkbox" name="" id="rem">
-                        <label for="rem">Remember me</label>
+                <div class="w-[80%] flex justify-between items-center ">
+                    <div class="rem text-gray-600">
+                        <div class="flex items-center gap-1">
+                            <input type="checkbox" name="" id="rem">
+                            <label for="rem">Remember me</label>
+                        </div>
                     </div>
                     <a href="#" class="text-xs text-pink-500 hover:underline">Forgot password?</a>
                 </div>
@@ -58,7 +61,7 @@
                 </button>
 
                 <div class="mt-4 text-gray-600 text-sm">
-                    Not a member? <a href="#" class="text-pink-500 font-bold hover:underline">Signup now</a>
+                    Not a member? <a href="#" class="text-pink-400 hover:underline">Signup now</a>
                 </div>
 
             </div>
